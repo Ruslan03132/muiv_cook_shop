@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/image_basket"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="8dp"
+        android:scaleType="centerCrop" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+
+        >
+
+        <TextView
+            android:id="@+id/title_backet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="25sp"
+            tools:text="This is Title" />
+
+        <TextView
+            android:id="@+id/price_basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_backet"
+            android:textColor="#000000"
+            tools:text="This is price" />
+
+        <TextView
+            android:id="@+id/textview_priceRUB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_backet"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/price_basket"
+            android:text="рублей"
+            android:textColor="#000000" />
+
+        <TextView
+            android:id="@+id/weight_basket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_basket"
+
+            android:textColor="#000000"
+            tools:text="This is weight" />
+
+        <TextView
+            android:id="@+id/textview_weightG"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/price_basket"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/weight_basket"
+            android:text="грамм"
+            android:textColor="#000000" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

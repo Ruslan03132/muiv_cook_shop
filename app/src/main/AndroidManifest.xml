@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="MUIV_Recipes_app.ruslan_borislavovich.MUIVRecipes.MUIVRecipes">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/recipesmain"
+        android:label="Столовая МУИВ"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".RecipeMeatActivity"
+            android:exported="true"
+            android:parentActivityName=".activity_meat">
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value=".salatActivity" />
+        </activity>
+
+        <activity
+            android:name=".RecipeSoupActivity"
+            android:exported="true"
+            android:parentActivityName=".activity_soup">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".salatActivity" />
+        </activity>
+        <activity
+            android:name=".basket_activity"
+            android:exported="true" />
+        <activity
+            android:name=".RecipeSalatActivity"
+            android:exported="true"
+            android:parentActivityName=".salatActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".salatActivity" />
+        </activity>
+        <activity
+            android:name=".activity_soup"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".activity_meat"
+            android:exported="true"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".salatActivity"
+            android:exported="true"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MoreActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FavoriteActivity"
+            android:noHistory="false"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".RecipeActivityPizza"
+            android:parentActivityName=".FavoriteActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".FavoriteActivity" />
+        </activity>
+        <activity
+            android:name=".PizzaActivity"
+            android:parentActivityName=".MainActivity" />
+    </application>
+
+</manifest>

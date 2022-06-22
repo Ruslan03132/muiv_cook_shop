@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:id="@+id/home"
+            android:icon="@drawable/ic_home_orange_24dp"
+            android:title="Меню"
+            />
+        <item android:id="@+id/favorite"
+            android:icon="@drawable/ic_favorite_red_24dp"
+            android:title="Избранные блюда"
+            />
+        <item android:id="@+id/basket"
+            android:icon="@drawable/ic_baseline_shopping_cart_24"
+            android:title="Корзина"
+            />
+        <item android:id="@+id/thumb"
+            android:icon="@drawable/ic_thumb_up_orange_24dp"
+            android:title="@string/titleLike"
+            />
+        <item android:id="@+id/more"
+            android:icon="@drawable/ic_format_align_justify_orange_24dp"
+            android:title="@string/titleMore"
+            />
+    </group>
+</menu>
